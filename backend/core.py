@@ -1,6 +1,6 @@
-# from dotenv import load_dotenv
+from dotenv import load_dotenv
 
-# load_dotenv()
+load_dotenv()
 
 import os
 from typing import Any, List, Dict
@@ -8,7 +8,7 @@ from typing import Any, List, Dict
 from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 from langchain.chains import ConversationalRetrievalChain
 from langchain_community.vectorstores import Pinecone
-import pinecone
+# import pinecone
 
 from consts import INDEX_NAME
 
@@ -24,7 +24,7 @@ def run_llm(query: str, chat_history: List[Dict[str, Any]] = []) -> Any:
     model_name = 'text-embedding-ada-002'
     embeddings = OpenAIEmbeddings(
         model=model_name,
-        openai_api_key=os.environ.get("OPENAI_API_KEY")    
+        # openai_api_key=os.environ.get("OPENAI_API_KEY")    
     )
 
     docsearch = Pinecone.from_existing_index(

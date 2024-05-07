@@ -7,11 +7,16 @@ name = "pypi"
 streamlit = "*"
 langchain = "*"
 langchain-openai = "*"
-langchain-community = "*"
+pypdf = "*"
+spire = "*"
+"spire.pdf" = "*"
+pypdf2 = "*"
 pinecone-client = "*"
-python-dotenv = "*"
+langchain-pinecone = "*"
+langchain-community = "*"
+streamlit-chat = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.12"
+python_version = "3.11"
